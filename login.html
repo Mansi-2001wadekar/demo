@@ -1,0 +1,59 @@
+<html>
+<body>
+<div>
+<form>
+<h1><b>Login form</b></h1>
+<label> Enter your Name:</label><input id="first" type="text"><br>
+<label> Enter your Password:</label><input id="second" type="text"><br><br>
+<button onclick="f1()" >Log in</button>
+</form>
+</div>
+<script>
+function f1()
+{
+var first,second;
+first=document.getElementById("first").value;
+second=parseInt(document.getElementById("second").value);
+
+if(first=="Mansi"&&second==123)
+{
+alert("Log in successfully!!!");
+}
+else
+{
+alert("please enter correct name and password");
+}
+}
+</script>
+</body>
+<style>
+label,#first,#second
+{
+margin-left:50px;
+padding:10px;
+}
+input
+{
+border-radius:20px;
+font-weight:bold;
+}
+div
+{
+width:300px;
+height:250px;
+background-color:blue;
+color:white;
+font-weight:bold;
+border-radius:30px;
+padding:20px;
+}
+button
+{
+width:100px;
+height:30px;
+margin-left:65px;
+font-weight:bold;
+background-color:red;
+}
+
+</html>
